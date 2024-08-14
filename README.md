@@ -7,19 +7,13 @@
 
 ***We design a new architecture that can support 10+ control types in condition text-to-image generation and can generate high resolution images visually comparable with midjourney***. The network is based on the original ControlNet architecture, we propose two new modules to: 1 Extend the original ControlNet to support different image conditions using the same network parameter. 2 Support multiple conditions input without increasing computation offload, which is especially important for designers who want to edit image in detail, different conditions use the same condition encoder, without adding extra computations or parameters. We do thoroughly experiments on SDXL and achieve superior performance both in control ability and aesthetic score. We release the method and the model to the open source community to make everyone can enjoy it.  
 
-**If you find it useful, please give me a star, Thank you very much!!**
-  
-**~500+ star, release the ProMax version with tile and inpainting!!!~**  
+**If you find it useful, please give me a star, Thank you very much!!**  
 **SDXL ProMax version has been released!!!，Enjoy it!!!**  
-**~1000+ star, release the ControlNet++ model for SD3!!!~**  
-**~SD3 training is doing, will release as soon as complete!!~**  
-**~3000+ star, release the ControlNet++ ProMax model for SD3!!!~**  
+
 **I am sorry that because of the project's revenue and expenditure are difficult to balance, the GPU resources are assigned to other projects that are more likely to be profitable, the SD3 trainging is stopped until I find enough GPU supprt, I will try my best to find GPUs to continue training. If this brings you inconvenience, I sincerely apologize for that. I want to thank everyone who likes this project, your support is what keeps me going**
 
 Note: we put the promax model with a promax suffix in the same [huggingface model repo](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0), detailed instructions will be added later. 
 
-## Help needed
-First, I want to thank everyone who pay attention to this project and give support to me. ControlNet++ has gained 600+ star in github and 15000+ downloads in huggingface within a week, I never thought about it before I release it. I have received many feedbacks from you guys. But I am faced with the situation that my energy is limited, the main problem you faced lies in the adaptation of the model to comfyui, A1111 ControlNet extension, diffusers, because this a new network architecture and can't be directly used in the original framework, there is work to do. Recently My main effort lies in the training of the model, you know it is not easy to provide the coolest model with good performance. Especially for SD3, the model has been reported to have the problem of human deformities, I must work hard to solve it. So I need help, anyone who can help with the adaptation to comfyui, A1111 ControlNet extension, diffusers, please concat me, you can just open an issue or discussion.
 
 ## Advanced editing features in Promax Model
 ### Tile Deblur
